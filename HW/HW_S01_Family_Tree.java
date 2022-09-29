@@ -93,11 +93,60 @@ public class HW_S01_Family_Tree {
         // детей нет
         G3W2.dad = G2M3;
         G3W2.mom = G2W2;
-        // детей нет        
+        // детей нет    
+        
+        research.get_grandmothers(G3W2);
+        research.get_grandmothers(G2M3);
+        research.get_grandmothers(G1M1);
+
+        research.get_children(G1M1);
+        
+        research.get_offsprings(G1M2, "");
+
+
     }
     
 }
+/**
+ * Исследования
+ */
+class research {
+    static void  get_grandmothers(human h){
+        if (h.dad != null && h.dad.mom != null) {
+                System.out.println(h.dad.mom.name);            
+        } else{
+            System.out.println("no information about paternal grandmother");
+        }
+        if (h.mom != null && h.mom.mom != null) {
+            System.out.println(h.mom.mom.name);            
+        } else{
+            System.out.println("no information about maternal grandmother");
+        }
+    }
 
+    static void get_children(human h){
+        if (!h.children.isEmpty()) {
+            for (human child : h.children) {
+                System.out.println(child.name);
+            }
+        } else{
+            System.out.println("No children.");
+        }
+    }
+
+    static void get_offsprings(human h, String str){
+        System.out.printf("%sПотомки %s:\n", str, h.name);
+        if (h.children.isEmpty()) {
+            System.out.printf("%sx %s не имеет детей.\n", str, h.name);
+        }else{
+            str += " - ";
+            for (human child : h.children) {
+                System.out.printf("%s%s\n", str, child.name);
+                get_offsprings(child, str);
+            }
+        }
+    }
+}
 
 /**
  * HW_S01_Family_Tree
