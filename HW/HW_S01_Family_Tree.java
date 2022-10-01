@@ -10,7 +10,7 @@
 // Под “проведением исследования” можно понимать получение всех детей выбранного человека.
 
 import java.util.ArrayList;
-import java.util.jar.Manifest;
+// import java.util.jar.Manifest;
 
 public class HW_S01_Family_Tree {
     public static void main(String[] args) {
