@@ -16,11 +16,11 @@ public class SumModel extends CalcModel {
         }
     }
 
-    // @Override
-    // public String getEvent() {
-    //     String event = ""; // записать текущие дату, время и 
-    //     return event;
-    // }
+    @Override
+    public String getEvent() {
+        String event = "Текущая дата, текущее время, что вычисляли, что получилось";
+        return event;
+    }
 
     @Override
     public void setCalcVariant(int value) {

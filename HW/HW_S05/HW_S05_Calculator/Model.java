@@ -1,7 +1,7 @@
 public interface Model {
     String result();
 
-    // String getEvent();
+    String getEvent();
 
     void setCalcVariant(int value);
 
