@@ -18,21 +18,6 @@ public class SumModel extends CalcModel {
         }
     }
 
-    // @Override
-    // public String getEvent() {
-    //     // Date date = new Date();
-    //     // String event = date.toString() + ": ";
-    //     // if (calcVariant == 1) {
-    //     //     event += Integer.toString(x1) + "/" + Integer.toString(x2) + " + " + Integer.toString(y1) + "/"
-    //     //             + Integer.toString(y2) + " = " + result();
-    //     // } else{
-    //     //     event += Integer.toString(x1) + " + " + Integer.toString(x2) + "i + " + Integer.toString(y1) + " + "
-    //     //             + Integer.toString(y2) + "i = " + result();
-    //     // }
-    //     // return event;
-    //     return null;
-    // }
-
     @Override
     public void setCalcVariant(int value) {
         super.calcVariant = value;

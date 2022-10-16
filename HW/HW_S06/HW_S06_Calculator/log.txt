@@ -8,3 +8,5 @@ Sat Oct 15 22:35:05 KRAT 2022: 0 + 0i + 0 + 0i = null
 Sat Oct 15 22:38:36 KRAT 2022: 0 + 0i + 0 + 0i = null
 Sun Oct 16 09:05:51 KRAT 2022: 1 + 2i + 1 + 2i = 2 + 4i
 Sun Oct 16 09:06:22 KRAT 2022: 1/2 + 1/2 = 4/4
+Sun Oct 16 11:00:23 KRAT 2022: 1/2 + 1/2 = 4/4
+Sun Oct 16 11:00:27 KRAT 2022: 1 + 2i + 1 + 2i = 2 + 4i
